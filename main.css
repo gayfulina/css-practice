@@ -15,6 +15,11 @@ h1 {
     padding: 10px;
 }
 
+.plan__list{
+    width: 80%;
+    margin: auto;
+}
+
 .plan {
     background: #d5ffdc;
     text-align: center;
