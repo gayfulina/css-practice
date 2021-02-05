@@ -17,18 +17,18 @@ main{
     padding: 32px;
 }
 
-.package__header{
+.package__title{
     font-weight: bold;
     text-decoration: none;
     color: black;
 }
 
-.package__title{
+.package__subtitle{
     text-decoration: none;
     color: #cccccc;
 }
 
-.package__description{
+.package__info{
     background: white;
     color: #0e4f1f;
     text-decoration: none;
