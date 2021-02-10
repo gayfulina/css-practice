@@ -8,13 +8,13 @@ body {
 }
 
 .backdrop {
-    display: none;
+    /*display: none;*/
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0,0,0,0.5);
 }
 
@@ -37,8 +37,8 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.4rem;
-    height: 22px;
+    font-size: 1.5rem;
+    height: 1.5rem;
     display: inline-block;
 }
 
@@ -61,7 +61,7 @@ body {
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-nav__item a {
@@ -124,7 +124,6 @@ body {
     background: #0e4f1f;
     color: white;
     font: inherit;
-    font-weight: bold;
     border: 2px solid #0e4f1f;
     padding: 0.5rem;
     border-radius: 8px;
