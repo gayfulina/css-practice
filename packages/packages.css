@@ -1,5 +1,5 @@
 main {
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 .background {
@@ -15,7 +15,7 @@ main {
     width: 80%;
     border: 4px solid #0e4f1f;
     border-left: none;
-    margin: 16px 0;
+    margin: 1rem 0;
     position: relative;
 }
 
@@ -30,8 +30,7 @@ main {
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 32px;
-    position: relative;
+    padding: 2rem;
 }
 
 .package__title {
@@ -44,11 +43,11 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px;
-    font-size: 12px;
+    margin: 1.2rem;
+    font-size: 0.8rem;
     color: white;
     background: #ff5454;
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 .package__subtitle {
@@ -61,8 +60,8 @@ main {
     color: #0e4f1f;
     text-decoration: none;
     border: 1px solid #0e4f1f;
-    padding: 16px;
-    font-size: 20px;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
 .clearfix {

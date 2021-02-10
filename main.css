@@ -9,9 +9,9 @@
     /*background-image: linear-gradient( 180deg, red 70%, rgba(0,0,0,0.5), blue 60%);*/
     /*background-image: radial-gradient(ellipse farthest-corner at 20% 50%, yellowgreen, slateblue 70%, lightpink);*/
     width: 100%;
-    height: 528px;
-    padding: 10px;
-    margin-top: 43px;
+    height: 600px;
+    padding: 0.8rem;
+    margin-top: 2.7rem;
     position: relative;
 }
 
@@ -37,8 +37,8 @@
 .plan {
     background: #d5ffdc;
     text-align: center;
-    padding: 16px;
-    margin: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
     display: inline-block;
     width: 30%;
     vertical-align: middle;
@@ -53,7 +53,7 @@
 .plan__annotation {
     background: white;
     color: #19b84c;
-    padding: 8px;
+    padding: 1rem;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
@@ -81,19 +81,19 @@
 }
 
 .plan__feature {
-    margin: 8px;
+    margin: 0.5rem;
 }
 
 
 #key-features {
     background: #ff1b68;
-    margin-top: 80px;
-    padding: 16px;
+    margin-top: 5rem;
+    padding: 1rem;
 }
 
 #key-features .section-title {
     color: white;
-    margin: 32px;
+    margin: 2rem;
 }
 
 .key-feature__list {
@@ -116,12 +116,12 @@
     border: 2px solid #242424;
     border-radius: 70px;
     margin: auto;
-    padding: 20px;
+    padding: 1.2rem;
 }
 
 .key-feature__description {
     text-align: center;
     font-weight: bold;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
