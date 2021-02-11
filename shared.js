@@ -2,14 +2,16 @@ const backdrop = document.querySelector('.backdrop');
 const modal = document.querySelector('.modal');
 const selectPlanButtons = document.querySelectorAll('.plan button');
 const modalNoButton = document.querySelector('.modal__action--negative');
-const toggleButton = document.querySelector('.toggle-button')
-const mobileNav = document.querySelector('.mobile-nav')
-
+const toggleButton = document.querySelector('.toggle-button');
+const mobileNav = document.querySelector('.mobile-nav');
 
 for (let i = 0; i < selectPlanButtons.length; i++) {
     selectPlanButtons[i].addEventListener('click', function () {
-        modal.style.display = 'block';
-        backdrop.style.display = 'block';
+        // modal.style.display = 'block';
+        // backdrop.style.display = 'block';
+        // modal.className = 'open'; //This is actually overwrite the complete class list
+        modal.classList.add('open');
+        backdrop.classList.add('open');
     })
 }
 
@@ -18,5 +20,13 @@ closeModal = () => {
     backdrop.style.display = 'none';
 }
 
-backdrop.addEventListener('click', closeModal)
-modalNoButton.addEventListener('click', closeModal)
+backdrop.addEventListener('click', function () {
+    mobileNav.style.display = 'none';
+    closeModal();
+})
+modalNoButton.addEventListener('click', closeModal);
+
+toggleButton.addEventListener('click', function () {
+    mobileNav.style.display = 'block';
+    backdrop.style.display = 'block';
+})
