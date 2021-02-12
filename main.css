@@ -45,7 +45,6 @@
 .plan--highlighter {
     background: #19b84c;
     color: white;
-    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);*/
 }
 
 .plan__annotation {
@@ -94,6 +93,8 @@
         width: 30%;
         vertical-align: middle;
         margin: 0.5rem;
+        min-width: 13rem;
+        max-width: 25rem;
     }
 
     .plan--highlighter {
@@ -120,9 +121,7 @@
 }
 
 .key-feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+    width: 100%;
 }
 
 .key-feature__image {
@@ -140,6 +139,14 @@
     font-weight: bold;
     color: white;
     font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+    .key-feature {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
 }
 
 .modal {
