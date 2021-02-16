@@ -8,12 +8,19 @@ main {
     color: #ff5454;
 }
 
+.signup-form {
+    padding: 1rem;
+}
+
+.signup-form label {
+    font-weight: bold;
+}
+
 .signup-form label,
 .signup-form input,
 .signup-form select {
     display: block;
     margin-top: 1rem;
-    padding: 0.3rem;
     width: 100%;
 }
 
@@ -29,4 +36,11 @@ main {
 .signup-form button[type="submit"] {
     display: block;
     margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .signup-form {
+        margin: auto;
+        width: 25rem;
+    }
 }
