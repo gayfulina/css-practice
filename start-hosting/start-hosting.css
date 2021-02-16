@@ -36,14 +36,13 @@ main {
     border: 1px solid #ccc;
     padding: 0.2rem 0.5rem;
     font: inherit;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
 .signup-form input:focus,
 .signup-form select:focus{
     outline: none;
     background: #d8f3df;
-    border: #2ddf5c;
+    border-color: #2ddf5c;
 }
 
 .signup-form button[type="submit"] {
