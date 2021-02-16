@@ -1,5 +1,5 @@
 main {
-  padding-top: 1rem;
+    padding-top: 1rem;
 }
 
 .signup-title {
@@ -10,9 +10,23 @@ main {
 
 .signup-form label,
 .signup-form input,
-.signup-form select{
+.signup-form select {
     display: block;
     margin-top: 1rem;
     padding: 0.3rem;
     width: 100%;
+}
+
+/*.signup-form input[type="checkbox"] {*/
+/*    display: inline;*/
+/*}*/
+.signup-form input[id*="terms"],
+.signup-form input[id*="terms"] + label {
+    display: inline-block;
+    width: auto;
+}
+
+.signup-form button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
 }
