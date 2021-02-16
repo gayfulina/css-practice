@@ -62,7 +62,8 @@ main {
 }
 
 .signup-form input.invalid,
-.signup-form input.invalid {
+.signup-form input.invalid,
+.signup-form:invalid {
     border-color: red;
     background: #faacac;
 }
