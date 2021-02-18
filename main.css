@@ -22,7 +22,7 @@
     font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) and (min-height: 40rem){
+@media (min-width: 40rem) and (min-height: 40rem) {
     #product-overview {
         height: 40vh;
         background-position: 50% 25%;
@@ -82,22 +82,27 @@
 
 @media (min-width: 40rem) {
     .plan__list {
-        width: 80%;
-        margin: auto;
-        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .plan {
-        display: inline-block;
         width: 30%;
-        vertical-align: middle;
         margin: 0.5rem;
         min-width: 13rem;
         max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30rem;
+        z-index: 50;
     }
 
     .plan--highlighter {
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        height: 32rem;
     }
 }
 
@@ -124,7 +129,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .key-feature__image {
@@ -145,11 +152,15 @@
 }
 
 @media (min-width: 40rem) {
+    .key-feature__list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
     .key-feature {
-        display: inline-block;
         width: 30%;
         max-width: 25rem;
-        vertical-align: top;
     }
 }
 
