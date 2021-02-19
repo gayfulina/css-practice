@@ -6,13 +6,21 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    display: grid;
+    grid-template-rows: auto 8rem;
+    padding-top: 3.5rem;
+    height: 100%;
 }
 
 main {
-    min-height: calc(100vh - 3.5rem - 8rem);
+    /*min-height: calc(100vh - 3.5rem - 8rem);*/
     margin-top: 3.5rem;
 }
 
