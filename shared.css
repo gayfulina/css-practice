@@ -14,14 +14,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     display: grid;
-    grid-template-rows: auto 8rem;
-    padding-top: 3.5rem;
+    grid-template-rows: 3.5rem auto fit-content(8rem);
+    grid-template-areas: "hd"
+                         "main"
+                         "ft";
+    /*padding-top: 3.5rem;*/
     height: 100%;
 }
 
 main {
-    /*min-height: calc(100vh - 3.5rem - 8rem);*/
-    margin-top: 3.5rem;
+    /*grid-row: 2 / 3;*/
+    grid-area: main;
 }
 
 .backdrop {
@@ -46,6 +49,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /*grid-area: hd;*/
 }
 
 .toggle-button {
@@ -141,6 +145,7 @@ main {
     background: black;
     padding: 2rem;
     margin-top: 3rem;
+    grid-area: ft;
 }
 
 .main-footer__links {
