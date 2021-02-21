@@ -10,6 +10,7 @@ main {
 
 .signup-form {
     padding: 1rem;
+    display: grid;
 }
 
 .signup-form label {
@@ -77,5 +78,6 @@ main {
     .signup-form {
         margin: auto;
         width: 25rem;
+        gtid-template-columns: 10rem auto;
     }
 }
