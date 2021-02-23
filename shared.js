@@ -24,10 +24,10 @@ closeModal = () => {
     if (modal) {
         modal.classList.remove('open');
     }
-    backdrop.style.display = 'block';
+    backdrop.classList.remove('open');
     setTimeout(function () {
-        backdrop.classList.remove('open');
-    }, 10)
+        backdrop.style.display = 'none';
+    }, 200)
 }
 
 backdrop.addEventListener('click', function () {
