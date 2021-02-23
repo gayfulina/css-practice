@@ -15,17 +15,25 @@ html {
     height: 100%;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 3.5rem auto fit-content(8rem);
-    grid-template-areas: "hd"
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding-top: 3.5rem;
+    }
+
+@supports (display: grid) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-rows: 3.5rem auto fit-content(8rem);
+        grid-template-areas: "hd"
                          "main"
                          "ft";
-    /*padding-top: 3.5rem;*/
+    padding-top: 0;
     height: 100%;
+    }
 }
+
 
 main {
     /*grid-row: 2 / 3;*/
